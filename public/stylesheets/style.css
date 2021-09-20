@@ -356,18 +356,26 @@ margin-top: 3rem;
         align-items: center;
 }
 
+.ironFitnessback{
+        position: absolute;
+        opacity: 0.4;
+        width: 40rem;
+        height: auto;
+        margin-left: 20rem;
+        margin-top: -17rem;
+        z-index: -1;    
+        
+}
+
+.ironbackground{
+        width: 100%
+}
+
 .ironFitness{
 width: 50px;
 }
 
-.ironbackground{
-        position: absolute;
-        opacity: 0.3;
-        width: 40rem;
-        margin-top: 23rem;
-        margin-left: -2rem;
-        z-index: -1;
-}
+
 
 /* VISTA RUTINA PRINCIPIANTE 1 DIA */
 
@@ -402,4 +410,158 @@ width: 50px;
 
 .bodyImage{
         margin: 4rem
+}
+
+/* VISTA SOLO USUARIOS ACCEDER LOGGIN */
+
+.noAcceder{
+        text-align: center;
+        margin-top: 3rem
+        
+}
+
+.formlogin{
+        margin-top: 10rem
+}
+
+/* VISTA LOGIN */
+
+.formregistro{
+    position: absolute;
+    min-width: 280px;
+    max-width: 25%;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    box-shadow: 0 1rem 1rem  rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1rem);
+    border-radius: 5px;
+    color: #fff;
+}
+.h1login{
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
+}
+.h1login::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 120px;
+    left: 0;
+    bottom: 0;    
+}
+.inputlogin{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 6px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+}
+
+.buttonlogin{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height:40px ;
+    background-color: #5d5b5b96;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+}
+.linklogin{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+/* VISTA REGISTRO */
+
+.formRegistro{
+    position: absolute;
+    min-width: 280px;
+    max-width: 25%;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    box-shadow: 0 1rem 1rem  rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1rem);
+    border-radius: 5px;
+    color: #fff;
+}
+.h1Registro{
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
+}
+.h1Registro::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 120px;
+    left: 0;
+    bottom: 0;    
+}
+.inputRegistro{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 6px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+}
+
+
+.buttonRegistro{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height:40px ;
+    background-color: #5d5b5b96;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+}
+.linkRegistro{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+.favoritesViews{
+        text-align: center;
+        font-size: 3rem
+}
+
+@media (max-width: 500px)  {
+
+        .ironFitnessback{
+        position: absolute;
+        opacity: 0.4;
+        width: 20rem;
+        margin-left: -1rem;
+        height: auto;
+        margin-top: -5rem;
+        z-index: -1;    
+        
+}
 }
