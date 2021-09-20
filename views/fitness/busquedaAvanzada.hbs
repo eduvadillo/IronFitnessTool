@@ -1,0 +1,46 @@
+
+<div class="tituloBusqueda">
+        <h1>Los ejercicios de la categoria {{category.name}}</h1>
+</div>
+
+
+{{#each exercise}}
+<div class="card vistabusqueda" style="width: 93vw;">
+  <h2 class="tituloEjercicio"> {{name}}</h2>
+  {{#if equipment}}
+  <p class="subcategorias">Equipamiento: <br /></p>
+    {{#each equipment}}
+<p class="nomSubCateg"> {{name}}</p>
+    {{/each}}
+  {{/if}}
+  <p class="subcategorias">Descripción: </p><br /><p class="nomSubCateg">{{{description}}}</p>
+  {{#if images}}
+  <p class="subcategorias">Imágenes: </p>
+    {{#each images}}
+<img class="imagenEjercicio" src="{{image}}" />
+    {{/each}}
+  {{/if}}
+    {{#if comments}}
+    <p class="subcategorias">Comentarios para este ejercicio: </p>
+    {{#each comments}}
+  <p class="nomSubCateg">{{comment}}</p>
+    {{/each}}
+  {{/if}}
+  {{#if muscles}}
+  <div class="musculoDiv">
+   <p  class="subcategorias">Músculos:</p>
+    {{#each muscles}}
+    <div class="musculoImgs">
+      <img  class="muscleImg" src="https:wger.de{{image_url_main}}" />
+     {{#if is_front}}
+     <img class="frontImg" src="https://wger.de/static/images/muscles/muscular_system_front.svg">
+     {{else}}
+     <img src="https://wger.de/static/images/muscles/muscular_system_back.svg">
+      </div>
+     {{/if}}
+    {{/each}}
+    </div>
+  {{/if}}
+  
+</div>
+{{/each}}

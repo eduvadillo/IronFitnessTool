@@ -1,0 +1,53 @@
+{{#each exercise}}
+<div class="card vistabusqueda" style="width: 93vw;">
+  <h2 class="tituloEjercicio"> {{name}}</h2>
+  {{#if equipment}}
+  <p class="subcategorias">Equipamiento: <br /></p>
+    {{#each equipment}}
+<p class="nomSubCateg"> {{name}}</p>
+    {{/each}}
+  {{/if}}
+  <p class="subcategorias">Descripción: </p><br /><p class="nomSubCateg">{{{description}}}</p>
+  {{#if images}}
+  <p class="subcategorias">Imágenes: </p>
+    {{#each images}}
+    <div class="imgEjercicio">
+<img class="imagenEjercicio" src="{{image}}" />
+</div>
+    {{/each}}
+  {{/if}}
+    {{#if comments}}
+    <p class="subcategorias">Comentarios para este ejercicio: </p>
+    {{#each comments}}
+  <p class="nomSubCateg">{{comment}}</p>
+    {{/each}}
+  {{/if}}
+  {{#if muscles}}
+  <div class="musculoDiv">
+   <p  class="subcategorias">Músculos:</p>
+    {{#each muscles}}
+    <div class="musculoImgs">
+      <img  class="muscleImg" src="https:wger.de{{image_url_main}}" />
+     {{#if is_front}}
+     <img class="frontImg" src="https://wger.de/static/images/muscles/muscular_system_front.svg">
+     {{else}}
+     <img src="https://wger.de/static/images/muscles/muscular_system_back.svg">
+      </div>
+     {{/if}}
+    {{/each}}
+    </div>
+  {{/if}}
+          <form action = "/equipment/{{id}}" method="POST">
+          
+        <input type="text" name="name" hidden value="{{name}}" />
+        <input type="text" name="category" hidden value="{{this.category}}"/>
+        <input type="text" name="description" hidden  value="{{description}}"/> 
+        <input type="text" name="muscles" hidden value="{{[muscles]}}" />
+        <input type="text" name="equipment" hidden value="{{equipment}}" />
+        <input type="text" name="comments" hidden value="{{this.comments}}" />
+        <input type="text" name="ejercicioId" hidden value="{{id}}" />
+
+          <button type="submit">Añadir a favoritos</button>
+        </form>
+</div>
+{{/each}}
