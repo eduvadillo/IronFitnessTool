@@ -1,0 +1,86 @@
+<div class="tituloPortadaEjercicio">
+        <h2>Elige ejercicios según tus gustos y necesidades</h2>
+</div>
+<div class="dividirPortada2">
+        <div class="opciones2">
+                <h5>Ordenados por músculo</h5>
+                <div class="col text-center">
+                <a class="btn btn-danger regular-button btnmargin" href="/draw">  Ver ejercicios</a>
+                </div>	
+        </div>
+         <div class="opciones2">
+                <h5>Ordenados por material necesario</h5>
+                <div class="col text-center">
+                <a class="btn btn-danger regular-button btnmargin" href="/equipment">  Ver ejercicios</a>
+                </div>	
+        </div>
+</div>
+<div class="busquedaAvanzada">
+        <h2>Búsqueda avanzada para ver toda la información de los ejercicios</h2>
+</div>
+<form action="/busqueda-avanzada" method="POST">
+<div class="general">
+
+<div class="allSelects">
+<h5 class="chooseEjer">Category</h5>
+<div class="select">
+   <select name="category" id="format">
+      <option selected disabled>Choose exercise category</option>
+      <option value="Abs">Abs</option>
+      <option value="Arms">Arms</option>
+      <option value="Back">Back</option>
+      <option value="Calves">Calves</option>
+      <option value="Chest">Chest</option>
+      <option value="Legs">Legs</option>
+      <option value="Shoulders">Shoulders</option>
+   </select>
+</div>
+</div>
+
+<div class="allSelects">
+<h5 class="chooseEjer">Muscle</h5>
+<div class="select">
+   <select name="muscles" id="format2">
+      <option selected disabled>Choose a muscle to train</option>
+      <option value="Anterior deltoid">Anterior deltoid</option>
+      <option value="Biceps brachii">Biceps brachii</option>
+      <option value="Biceps femoris">Biceps femoris</option>
+      <option value="Brachialis"> Brachialis</option>
+      <option value="Gastrocnemius">Gastrocnemius</option>
+      <option value="Gluteus maximus">Gluteus maximus</option>
+      <option value="Latissimus dorsi">Latissimus dorsi </option>
+      <option value="Obliquus externus abdominis">Obliquus externus abdominisl</option>
+      <option value="Pectoralis major">Pectoralis major</option>
+      <option value=" Quadriceps femoris">Quadriceps femoris</option>
+      <option value="Rectus abdominis ">Rectus abdominis</option>
+      <option value="Serratus anterior">Serratus anterior</option>
+       <option value="Soleus"> Soleus</option>
+      <option value="Trapezius"> Trapezius</option>
+      <option value="Triceps brachii">Triceps brachii</option>
+   </select>
+</div>
+</div>
+
+<div class="allSelects">
+<h5 class="chooseEjer">Equipment</h5>
+<div class="select">
+   <select name="equipment" id="format3">
+      <option selected disabled>Choose a necessary equipment</option>
+      <option value="Barbell">Barbell</option>
+      <option value="Bench">Bench</option>
+      <option value="GymMat">Gym mat</option>
+      <option value="Incline bench">Incline bench</option>
+      <option value="Kettlebell">Kettlebell</option>
+      <option value="bodyweight exercise">bodyweight exercise</option>
+      <option value="PullUpBar">Pull-up bar</option>
+      <option value="SwissBall">Swiss Ball</option>
+      <option value="SZBar">SZ-Bar</option>
+   </select>
+</div>
+</div>
+
+</div>
+<div class="col text-center">
+        <button class="btn btn-danger regular-button btnmargin" type="submit">  Ver ejercicios</button>
+</div>
+</form>
