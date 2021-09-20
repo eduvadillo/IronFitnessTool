@@ -10,7 +10,7 @@ const FitnessAPI = new Api();
 
 router.get("/elegirCategoria", (req, res) => {
 
-        res.render(`fitness/indexEjercicios`,  { isLoggedIn: req.session.user })
+        res.render(`fitness/indexEjercicios1`,  { isLoggedIn: req.session.user })
 })
 
 
