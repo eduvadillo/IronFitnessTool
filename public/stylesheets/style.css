@@ -564,4 +564,15 @@ width: 50px;
         z-index: -1;    
         
 }
+
+        .bodyImage{
+                display: none;
+        }
+}
+
+
+/* nav layout */
+
+.imgNav{
+        width:50px
 }
